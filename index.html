@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03 - Calculadora JavaScript</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Calculadora Básica</h1>
+        <input id="num1" type="number" />
+        <input id="num2" type="number" />
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplic()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        <input id="result" type="number" readonly />        
+        
+        <div id="history">
+
+        </div>
+
+    </div>
+    <script>
+        function somar() {
+            
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var soma = num1 + num2;
+            document.getElementById("result").value = soma;
+            console.log(soma);
+
+            document.getElementById("history").innerHTML += "<br>" +soma;
+        }
+        function subtrair() {
+            
+            
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var subtrair = num1 - num2;
+            document.getElementById("result").value = subtrair;
+            console.log(subtrair);
+
+            document.getElementById("history").innerHTML += "<br>" +subtrair;
+        }
+        function multiplic() {
+            
+            
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var multiplic = num1 * num2;
+            document.getElementById("result").value = multiplic;
+            console.log(multiplic);
+
+            document.getElementById("history").innerHTML += "<br>" +multiplic;
+        }
+        function dividir() {
+            
+            
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var dividir = num1 / num2;
+            document.getElementById("result").value = dividir;
+            console.log(dividir);
+
+            document.getElementById("history").innerHTML += "<br>" +dividir;
+        }
+
+
+
+
+        function somar2() {
+            document.getElementById("soma").value = 
+             parseFloat(document.getElementById("num1").value) +
+             parseFloat(document.getElementById("num2").value);
+        }
+
+    </script>
+
+
+</body>
+
+</html>
