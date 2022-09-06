@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 03 - Calculadora JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora JavaScript</title>
 </head>
 
 <body>
 
     <div>
         <h1>Calculadora Básica</h1>
+        <h2>Digite os números:</h2>
         <input id="num1" type="number" />
         <input id="num2" type="number" />
+        <h2>Selecione a operação:</h2>
         <button onclick="somar()">Somar</button>
         <button onclick="subtrair()">Subtrair</button>
         <button onclick="multiplic()">Multiplicar</button>
         <button onclick="dividir()">Dividir</button>
+        <h2>Resultado:</h2>
         <input id="result" type="number" readonly />        
         
+        
         <div id="history">
-
-        </div>
-
+        <h2>Histórico</h2>
+</div>
     </div>
     <script>
         function somar() {
@@ -68,15 +72,6 @@
             console.log(dividir);
 
             document.getElementById("history").innerHTML += "<br>" +dividir;
-        }
-
-
-
-
-        function somar2() {
-            document.getElementById("soma").value = 
-             parseFloat(document.getElementById("num1").value) +
-             parseFloat(document.getElementById("num2").value);
         }
 
     </script>
