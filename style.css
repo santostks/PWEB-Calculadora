@@ -1,9 +1,16 @@
 body{
-    background-color: rgb(194, 179, 118);
+    align-content: center;
+    background-color: rgb(106, 141, 240);
     border-style: none;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.history{
-    
+
+#history{
+    text-align: center;
+    background-color: rgb(151, 171, 235);
+    width: 200px;
+    height: 400px;
 
 }
